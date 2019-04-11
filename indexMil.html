@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white">Brian Donnelly</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href ="#">Interests</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="indexNature.html">Exploring Natural Features</a>
+                        <a class="dropdown-item" href="indexBird.html">Birding</a>
+                        <a class="dropdown-item" href="indexFamily.html">Family</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href ="#">Work History</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="indexMil.html">U.S. Army - Military Police</a>
+                        <a class="dropdown-item" href="indexWal.html">Wal-Mart Management</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href ="#">Education History</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="indexEduPrev.html">Previous Education</a>
+                        <a class="dropdown-item" href="indexEduCurr.html">Current Education</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="indexUserPics.html">User Submitted</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="indexForm.html">Submit an Image</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container d-flex p-2 bd-highlight justify-content-start description">
+    Brian served in the U.S. Army Reserves from 2010 to 2014 as Military Police - MOS 31B as an E-4 Specialist.
+    He deployed Active Duty from 2011 to 2012 to Guantanamo Bay, Cuba.
+    In addition to military duties, Brian also led R&R events for soldiers during their deployment. On days off he
+    captained a small boat in the Bay and led swimming excursions.
+</div>
+<div class="container d-flex">
+    <img style="margin-right: 1rem" class="reducedsize" src="images/Diving.jpg" alt="Diving in Guantanamo Bay">
+    <img style="margin-left: 1rem"  class="reducedsize" src="images/Arrive_home.jpg" alt="Parade Rest after Deployment">
+</div>
+<div class="container mx-auto">Duties performed:</div>
+<ul class="container list-group justify-content-start">
+    <li class="list-group-item">Managed 12 personnel and their stations ensuring all deadlines
+        for actions and reports were met</li>
+    <li class="list-group-item">Relayed orders and changes to Standard Operating Procedures from leadership</li>
+    <li class="list-group-item">Edited each stations reports, compiled statistics of activities using Excel each shift,
+        and consolidated all statistics and reports of the day into a single brief</li>
+    <li class="list-group-item">Trained new personnel in the Standard Operating Procedures
+        for 6 different positions</li>
+    <li class="list-group-item">Assisted in the refinement of the Training Manuals to reflect rapidly changing SOPs</li>
+    <li class="list-group-item">Maintained and updated a training record of over 20 personnel</li>
+    <li class="list-group-item">Administered and evaluated written and practical job qualification tests</li>
+</ul>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyA9juKQxygK6gkq6NjYc2sG2Xaq44ntbaU",
+        authDomain: "acit1420lab9.firebaseapp.com",
+        databaseURL: "https://acit1420lab9.firebaseio.com",
+        projectId: "acit1420lab9",
+        storageBucket: "acit1420lab9.appspot.com",
+        messagingSenderId: "135878722730"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>

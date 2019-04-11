@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white">Brian Donnelly</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href ="#">Interests</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="indexNature.html">Exploring Natural Features</a>
+                        <a class="dropdown-item" href="indexBird.html">Birding</a>
+                        <a class="dropdown-item" href="indexFamily.html">Family</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href ="#">Work History</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="indexMil.html">U.S. Army - Military Police</a>
+                        <a class="dropdown-item" href="indexWal.html">Wal-Mart Management</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href ="#">Education History</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="indexEduPrev.html">Previous Education</a>
+                        <a class="dropdown-item" href="indexEduCurr.html">Current Education</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="indexUserPics.html">User Submitted</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="indexForm.html">Submit an Image</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>
+<div class="container d-flex p-2 bd-highlight justify-content-start description">
+    Brian worked as a Manager for Wal-Mart US between 2013 and 2015. He acted as Asset Protection Manager
+    and Assistant Store Manager. Brian used de-escalation techniques learned from his time in the military on a
+    daily basis to moderate customer interactions and provide service and solutions. He is well practiced in
+    constructing reports and handling sensitive material.
+</div>
+<div class="d-flex justify-content-center">
+    <img class="d-flex justify-content-center" src="images/Walmart.png" alt="Wal-Mart">
+</div>
+<div class="container mx-auto">As Asset Protection Manager he:</div>
+<ul class="container list-group justify-content-start">
+    <li class="list-group-item">Managed shrink at store level through associate engagement,
+        root cause analysis, process development and follow-up</li>
+    <li class="list-group-item">Ensured store was compliant with federal and
+        state safety and environmental regulations</li>
+    <li class="list-group-item">Promoted a culture of a safety by encouraging, motivating,
+        and developing associate involvement in accident trends within the store</li>
+    <li class="list-group-item">Trained and managed a team of 6 Asset Protection Associates responsible for deterring
+        theft as well as apprehending and referring suspects to law enforcement</li>
+    <li class="list-group-item">Investigated sources of internal theft and created case files
+        presented to law enforcement for prosecution</li>
+    <li class="list-group-item">Participated monthly in audits of other facilities gauging the participation in
+        company initiatives and standard operating procedures</li>
+</ul>
+<br>
+<div class="container mx-auto">As Assistant Store Manager he:</div>
+<ul class="container list-group justify-content-start">
+    <li class="list-group-item">Performed as Operations, Front End, and Backroom Assistant Manager</li>
+    <li class="list-group-item">Monitored store standards throughout the day by performing tours and
+        assigning tasks to employees with specific expectations and deadlines</li>
+    <li class="list-group-item">Was responsible for hiring, developing and coaching, and
+        conducting terminations for supervisors and hourly employees</li>
+    <li class="list-group-item">Analyzed monthly Profit & Loss statements for opportunities to
+        increase sales and reduce costs</li>
+    <li class="list-group-item">Developed store merchandising plans for October through February</li>
+    <li class="list-group-item">Planned, coordinated, and executed the 2015 Black Friday Event resulting
+        in over $400k in sales and no incidents as well as significantly reduced overtime
+        costs compared to the previous year</li>
+</ul>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyA9juKQxygK6gkq6NjYc2sG2Xaq44ntbaU",
+        authDomain: "acit1420lab9.firebaseapp.com",
+        databaseURL: "https://acit1420lab9.firebaseio.com",
+        projectId: "acit1420lab9",
+        storageBucket: "acit1420lab9.appspot.com",
+        messagingSenderId: "135878722730"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>
